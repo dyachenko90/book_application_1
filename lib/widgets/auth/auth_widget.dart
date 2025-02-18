@@ -1,4 +1,4 @@
-import 'package:book_application_1/widgets/main_screen/main_screen_widget.dart';
+
 import 'package:flutter/material.dart';
 
 const testStyle = TextStyle(fontSize: 16);
@@ -18,7 +18,6 @@ class _AuthWidgetState extends State<AuthWidget> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.amber,
-        // ignore: prefer_const_constructors
         centerTitle: true,
         title: const Text('Залогінтеся'),
       ),
@@ -154,7 +153,7 @@ class __FormState extends State<_Form> {
           decoration: borderDecoration.copyWith(
             hintText: 'Ваш пароль',
           ),
-          obscuringCharacter: '►',
+          obscuringCharacter: ')',
           obscureText: true,
         ),
         SizedBox(height: 15),

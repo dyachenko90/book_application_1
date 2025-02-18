@@ -12,10 +12,10 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
 
  int _selectIndexItem = 0;
 
-  static const List<Widget> _widgetOptions = <Widget> [
-    Text('Home'),
-    CardListWidget(),
-    Text('Profile'),
+  static final List<Widget> _widgetOptions = <Widget> [
+    const CardListWidget(),
+    const Text('Home'),
+    const Text('Profile'),
   ];
 
 
@@ -32,7 +32,9 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Main'),
+        backgroundColor: Colors.amber,
+        centerTitle: true,
+        title: Text('***BookStore***'),
       ),
       body: Center(
         child: _widgetOptions[_selectIndexItem],
@@ -46,8 +48,8 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.list),
-            label: 'Caterories'
+            icon: Icon(Icons.shopping_cart_outlined),
+            label: 'Cart'
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.man),
